@@ -1,5 +1,4 @@
 #!/bin/bash
-# 需要在数组中填写需要恢复的库名
 # DBdir为定义一个目录存放获取到的表结构文件
 basedir=
 datadir=
