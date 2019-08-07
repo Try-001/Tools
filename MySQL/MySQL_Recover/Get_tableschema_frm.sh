@@ -14,8 +14,8 @@ chown mysql. -R $datadir
 # 重新初始化
 $basedir/bin/mysqld --initialize-insecure --datadir=$datadir --basedir=basedir --user=mysql
 
-#将库名定义为一个数组
-DBName=(test1 test2) 
+DBName=(`ls $datadir.bac | grep -v 'ib*\|innodb*\|mysql*\|sys\|performance_schema\|auto.cnf'`)
+# DBName=(test1 test2) 
 for i in ${DBName[@]}
 do
 	mkdir $DBdir/$i
