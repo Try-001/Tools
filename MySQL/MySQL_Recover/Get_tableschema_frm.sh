@@ -19,7 +19,7 @@ DBName=(test1 test2)
 for i in ${DBName[@]}
 do
 	mkdir $DBdir/$i
-	ls -l $datadir/$i/*.frm | awk '{print $9}' > $DBdir/$i/$i.table
+	ls -l $datadir.bac/$i/*.frm | awk '{print $9}' > $DBdir/$i/$i.table
 	cd $frmdir
 	for line in `cat $DBdir/$i/$i.table`
 	do
