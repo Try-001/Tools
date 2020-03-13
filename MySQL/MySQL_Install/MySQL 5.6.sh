@@ -87,3 +87,5 @@ if ! cat /etc/profile | grep "export PATH=\$PATH:/alidata/mysql/bin" &> /dev/nul
 	echo "export PATH=\$PATH:/alidata/mysql/bin" >> /etc/profile
 fi
 source /etc/profile
+
+#设置密码
